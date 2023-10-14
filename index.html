@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="main-wrapper">
+
         <nav class="left-nav">
             <div class="contenido-nav">
                 <h1><i class="bi bi-music-note-beamed"></i> Dotify</h1>
@@ -65,11 +67,17 @@
                 </nav>
 
                 <div class="header-content">
-                    <p>New hits</p>
-                    <h1>Rolling Girl</h1>
-                    <h2>ヒトリエ/HITORIE</h2>
-                    <img src="https://media.vgm.io/artists/51/14715/14715-1616638916.jpg" alt="">
+                    <div class="header-content_body">
+                        <p>New hits</p>
+                        <h1>Jet</h1>
+                        <h2>Polkadot Stingray</h2>
+                    </div>
+                    <ul class="buttons">
+                        <li class="button">Play now</li>
+                        <li class="fav-btn"><i class="bi bi-heart-fill"></i></li>
+                    </ul>
                 </div>
+                <img class="bg-img" src="images/VR6ssEG.jpg" alt="">
             </header>
 
             <section class="grid-container">
@@ -111,15 +119,20 @@
                 <div class="grid-box Player">
                     <h3 style=" width: 100%;  margin: 0 0 1rem 2rem;">Player</h3>
                     <div class="contenido-player">
-                        <img src="https://st.cdjapan.co.jp/pictures/l/07/27/AICL-3679.jpg" alt="">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <span class="audio"></span>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2730999f662c859a5cae3a3f18a" alt="">
+                        <h2>Jet</h2>
+                        <p>Polkadot Stingray</p>
+                        <div id="progreso" class="audio">
+                            <span class="progreso"></span>
+                            <audio style="opacity: 0;"  id="1" src="" ></audio>
+                        </div>
                     </div>
                     <div class="player-controls">
-                        <a href=""><i class="bi bi-repeat"></i></a>
-                        <a href=""><i class="bi bi-skip-start-fill"></i></a>
+                        <input type="file" id="fileInput" style="display: none;" webkitdirectory directory />
+                        <a ><i class="bi bi-repeat"></i></a>
+                        <a id="skip-start"><i class="bi bi-skip-start-fill"></i></a>
                         <a id="btn-play" class="bi bi-play-fill"></a>
-                        <a href=""><i class="bi bi-skip-end-fill"></i></a>
+                        <a id="skip"><i class="bi bi-skip-end-fill"></i></a>
                         <a href=""><i class="bi bi-shuffle"></i></a>
                     </div>
                 </div>
